@@ -20,10 +20,15 @@ body {
     padding: 16px 0px;
 }
 
-.header .container {
+.header .container,
+.hero .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero .container {
+    align-items: stretch;
 }
 
 .logo {
@@ -46,4 +51,56 @@ a {
     padding: 0px;
     display: flex;
     gap: 16px;
+}
+
+.hero {
+    background-color: #1F2937;
+    padding: 128px 0px;
+}
+
+.hero-text {
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.hero-text * {
+    margin: 0;
+}
+
+.placeholder-img {
+    background-color: #e5e7eb75;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text, .placeholder-img {
+    flex: 1;
+}
+
+.hero .title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero .subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+.hero button {
+    margin: 16px 0px;
 }
