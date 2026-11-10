@@ -33,10 +33,22 @@ body {
     align-items: stretch;
 }
 
+.information .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .quote .container {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+}
+
+.information .container,
+.quote .container {
+    max-width: 850px;
 }
 
 .logo {
@@ -68,7 +80,7 @@ a {
 
 .hero-text {
     box-sizing: border-box;
-    padding: 16px;
+    padding: 16px 16px 16px 0px;
 }
 
 .hero-text * {
@@ -126,13 +138,6 @@ button {
     padding: 64px 0px 128px 0px;
 }
 
-.information .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .information .info-cards {
     display: flex;
     justify-content: center;
@@ -166,17 +171,18 @@ button {
 .quote .quotee {
     color: #1F2937;
     margin: 0;
+    padding-inline: 36px;
 }
 
 .quote .subtext {
     font-size: 36px;  
     font-weight: 300;
     font-style: italic;
-    text-align: left;
+    text-align: start;
 }
 
 .quote .quotee {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    text-align: right;
+    text-align: end;
 }
