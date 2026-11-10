@@ -21,13 +21,21 @@ body {
 }
 
 .header .container,
-.hero .container {
+.hero .container,
+.information .container,
+.quote .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .hero .container {
+    align-items: stretch;
+}
+
+.quote .container {
+    flex-direction: column;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -80,10 +88,19 @@ a {
     flex: 1;
 }
 
+.hero .title,
+.information .title {
+    font-weight: 900;
+}
+
 .hero .title {
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: 900;
+}
+
+.information .title {
+    font-size: 36px;
+    color: #1F2937
 }
 
 .hero .subtext {
@@ -103,4 +120,63 @@ button {
 
 .hero button {
     margin: 16px 0px;
+}
+
+.information {
+    padding: 64px 0px 128px 0px;
+}
+
+.information .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.information .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.information .card {
+    flex: 1;
+}
+
+.card .card-img {
+    box-sizing: border-box;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.card .subtext {
+    font-size: 18px;
+    color: #6b6c6e;
+    text-align: center;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 128px 0px;
+}
+
+.quote .subtext,
+.quote .quotee {
+    color: #1F2937;
+    margin: 0;
+}
+
+.quote .subtext {
+    font-size: 36px;  
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+}
+
+.quote .quotee {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
 }
