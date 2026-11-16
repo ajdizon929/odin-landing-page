@@ -186,3 +186,36 @@ button {
     font-weight: bold;
     text-align: end;
 }
+
+.cta-modal {
+    padding: 128px 0px;
+}
+
+.cta-modal .alert {
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 64px 128px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-modal .title {
+    color: #F9FAF8;
+    margin: 0px;
+    font-size: 26px;
+}
+
+.cta-modal .subtext {
+    color: #E5E7EB;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cta-modal button {
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+    font-size: 18px;
+}
